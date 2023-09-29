@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <script src="../JS/index.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wheather-Fullpage">
+        <!-- left side  -->
+        <div class="wheather-container">
+          <div class="wheather-left-side-img">
+            <div class="wheather-city">
+              <h3 id="city-name">Delhi</h3>
+              <h2 id="country">IN</h2>
+            </div>
+            <div class="wheather-date">
+              <p class="temp" id="temperature">33.09°C</p>
+              <p id="date-time">Date and Time</p>
+            </div>
+          </div>
+  
+          <!-- right side -->
+          <div class="wheather-right-side">
+            <div class="wheather-temp">
+              <p id="current-temp">20</p>
+            </div>
+  
+            <!-- get city data -->
+            <div class="wheather-input">
+              <form id="search-form">
+                <input
+                  type="search"
+                  id="city-input"
+                  placeholder="Search any city"
+                />
+                <select id="unit">
+                  <option value="metric">°C</option>
+                  <option value="imperial">°F</option>
+                </select>
+                <input
+                  type="submit"
+                  id="search-button"
+                  value="Search"
+                />
+              </form>
+            </div>
+            <!-- end of city data -->
+  
+            <div class="wheather-info-temp">
+              <p>Temperature</p>
+              <p id="temperature-result">09°C</p>
+            </div>
+            <div class="wheather-info-temp">
+              <p>Humidity</p>
+              <p id="humidity-result">2500%</p>
+            </div>
+            <div class="wheather-info-temp">
+              <p>Wind speed</p>
+              <p id="wind-speed-result">7.2 km/hrs</p>
+            </div>
+            <div class="wheather-info-temp">
+              <p>Weather Description</p>
+              <p id="weather-description"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
